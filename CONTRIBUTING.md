@@ -24,6 +24,8 @@ Please use below template to report issue, or you could click menu item from Sur
     npm run build
 
     npm run build firefox       # build webextension for firefox
+    npm run build safari        # build webextension for safari
 
     npm run dev                 # build development version
     npm run dev firefox         # build development version for firefox
+    npm run dev safari          # build development version for safari

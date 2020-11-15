@@ -104,6 +104,9 @@ gulp.task('build_background', function() {
     if (buildTarget === "Firefox") {
         background.unshift("firefox_bg.js");
         gulp.src("firefox_pac.js").pipe(gulp.dest(`dist/${buildTarget}-extension`));
+    } else if (buildTarget === "Safari") {
+        background.unshift("safari_bg.js");
+        gulp.src("safari_pac.js").pipe(gulp.dest(`dist/${buildTarget}-extension`));
     } else {
         background.unshift("chrome_bg.js");
     }
@@ -132,6 +135,8 @@ gulp.task('build_modules', function() {
     ];
     if (buildTarget === "Firefox") {
         modules.push("content_scripts/firefox_fg.js");
+    } else if (buildTarget === "Safari") {
+        modules.push("content_scripts/safari_fg.js");
     } else {
         modules.push("content_scripts/chrome_fg.js");
     }
@@ -220,3 +225,9 @@ gulp.task('set_target_firefox', function (cb) {
     cb();
 });
 gulp.task('firefox', gulp.series(['set_target_firefox', 'build']));
+
+gulp.task('set_target_safari', function (cb) {
+    buildTarget = "Safari";
+    cb();
+});
+gulp.task('safari', gulp.series(['set_target_safari', 'build']));
