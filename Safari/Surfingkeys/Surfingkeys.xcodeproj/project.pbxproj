@@ -21,6 +21,16 @@
 		3663A73D2561C5E400E69C46 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3663A7342561C5E400E69C46 /* manifest.json */; };
 		3663A73E2561C5E400E69C46 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = 3663A7362561C5E400E69C46 /* pages */; };
 		3663A73F2561C5E400E69C46 /* content_scripts in Resources */ = {isa = PBXBuildFile; fileRef = 3663A7372561C5E400E69C46 /* content_scripts */; };
+		36EF6709256A771E007682C6 /* safari_bg.js in Resources */ = {isa = PBXBuildFile; fileRef = 36EF6708256A771E007682C6 /* safari_bg.js */; };
+		36EF6714256AAB72007682C6 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = 36EF6712256AAB72007682C6 /* pages */; };
+		36EF6715256AAB72007682C6 /* content_scripts in Resources */ = {isa = PBXBuildFile; fileRef = 36EF6713256AAB72007682C6 /* content_scripts */; };
+		36EF671E256AAC79007682C6 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 36EF671A256AAC79007682C6 /* manifest.json */; };
+		36EF671F256AAC79007682C6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36EF671B256AAC79007682C6 /* README.md */; };
+		36EF6720256AAC79007682C6 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 36EF671C256AAC79007682C6 /* package.json */; };
+		36EF6721256AAC79007682C6 /* README_CN.md in Resources */ = {isa = PBXBuildFile; fileRef = 36EF671D256AAC79007682C6 /* README_CN.md */; };
+		36EF6726256AAE17007682C6 /* sk.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 36EF6724256AAE17007682C6 /* sk.xcf */; };
+		36EF6727256AAE17007682C6 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 36EF6725256AAE17007682C6 /* icons */; };
+		36EF672B256C3ABD007682C6 /* sk.svg in Resources */ = {isa = PBXBuildFile; fileRef = 36EF672A256C3ABD007682C6 /* sk.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +78,16 @@
 		3663A7352561C5E400E69C46 /* background.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = background.js.map; path = "../../../dist/Safari-extension/background.js.map"; sourceTree = "<group>"; };
 		3663A7362561C5E400E69C46 /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pages; path = "../../../dist/Safari-extension/pages"; sourceTree = "<group>"; };
 		3663A7372561C5E400E69C46 /* content_scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content_scripts; path = "../../../dist/Safari-extension/content_scripts"; sourceTree = "<group>"; };
+		36EF6708256A771E007682C6 /* safari_bg.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = safari_bg.js; path = ../../../safari_bg.js; sourceTree = "<group>"; };
+		36EF6712256AAB72007682C6 /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pages; path = ../../../pages; sourceTree = "<group>"; };
+		36EF6713256AAB72007682C6 /* content_scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = content_scripts; path = ../../../content_scripts; sourceTree = "<group>"; };
+		36EF671A256AAC79007682C6 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = manifest.json; path = ../../../manifest.json; sourceTree = "<group>"; };
+		36EF671B256AAC79007682C6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
+		36EF671C256AAC79007682C6 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = package.json; path = ../../../package.json; sourceTree = "<group>"; };
+		36EF671D256AAC79007682C6 /* README_CN.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README_CN.md; path = ../../../README_CN.md; sourceTree = "<group>"; };
+		36EF6724256AAE17007682C6 /* sk.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sk.xcf; path = ../../../sk.xcf; sourceTree = "<group>"; };
+		36EF6725256AAE17007682C6 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../icons; sourceTree = "<group>"; };
+		36EF672A256C3ABD007682C6 /* sk.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sk.svg; path = ../../../sk.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +112,8 @@
 		3663A6FE2561C5E200E69C46 = {
 			isa = PBXGroup;
 			children = (
-				3663A7092561C5E200E69C46 /* Surfingkeys */,
+				36EF6707256A76ED007682C6 /* Surfingkeys */,
+				3663A7092561C5E200E69C46 /* Surfingkeys App */,
 				3663A7202561C5E300E69C46 /* Surfingkeys Extension */,
 				3663A71D2561C5E300E69C46 /* Frameworks */,
 				3663A7082561C5E200E69C46 /* Products */,
@@ -108,7 +129,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3663A7092561C5E200E69C46 /* Surfingkeys */ = {
+		3663A7092561C5E200E69C46 /* Surfingkeys App */ = {
 			isa = PBXGroup;
 			children = (
 				3663A70A2561C5E200E69C46 /* Surfingkeys.entitlements */,
@@ -118,7 +139,7 @@
 				3663A7122561C5E300E69C46 /* Assets.xcassets */,
 				3663A7142561C5E300E69C46 /* Info.plist */,
 			);
-			path = Surfingkeys;
+			path = "Surfingkeys App";
 			sourceTree = "<group>";
 		};
 		3663A71D2561C5E300E69C46 /* Frameworks */ = {
@@ -156,6 +177,23 @@
 			path = "Surfingkeys Extension";
 			sourceTree = SOURCE_ROOT;
 		};
+		36EF6707256A76ED007682C6 /* Surfingkeys */ = {
+			isa = PBXGroup;
+			children = (
+				36EF6725256AAE17007682C6 /* icons */,
+				36EF6724256AAE17007682C6 /* sk.xcf */,
+				36EF672A256C3ABD007682C6 /* sk.svg */,
+				36EF671A256AAC79007682C6 /* manifest.json */,
+				36EF671C256AAC79007682C6 /* package.json */,
+				36EF671D256AAC79007682C6 /* README_CN.md */,
+				36EF671B256AAC79007682C6 /* README.md */,
+				36EF6713256AAB72007682C6 /* content_scripts */,
+				36EF6712256AAB72007682C6 /* pages */,
+				36EF6708256A771E007682C6 /* safari_bg.js */,
+			);
+			path = Surfingkeys;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +223,7 @@
 				3663A7152561C5E300E69C46 /* Sources */,
 				3663A7162561C5E300E69C46 /* Frameworks */,
 				3663A7172561C5E300E69C46 /* Resources */,
+				36EF6702256A7463007682C6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -236,7 +275,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EF6727256AAE17007682C6 /* icons in Resources */,
+				36EF6720256AAC79007682C6 /* package.json in Resources */,
+				36EF672B256C3ABD007682C6 /* sk.svg in Resources */,
+				36EF6709256A771E007682C6 /* safari_bg.js in Resources */,
+				36EF6714256AAB72007682C6 /* pages in Resources */,
 				3663A7132561C5E300E69C46 /* Assets.xcassets in Resources */,
+				36EF6721256AAC79007682C6 /* README_CN.md in Resources */,
+				36EF6726256AAE17007682C6 /* sk.xcf in Resources */,
+				36EF671F256AAC79007682C6 /* README.md in Resources */,
+				36EF6715256AAB72007682C6 /* content_scripts in Resources */,
+				36EF671E256AAC79007682C6 /* manifest.json in Resources */,
 				3663A70F2561C5E200E69C46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +305,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36EF6702256A7463007682C6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nset -e\ncd ..\ncd ..\nnpm run dev safari\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3663A7032561C5E200E69C46 /* Sources */ = {
@@ -456,10 +525,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Surfingkeys/Surfingkeys.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Surfingkeys App/Surfingkeys.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Surfingkeys/Info.plist;
+				INFOPLIST_FILE = "Surfingkeys App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -477,10 +546,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Surfingkeys/Surfingkeys.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Surfingkeys App/Surfingkeys.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Surfingkeys/Info.plist;
+				INFOPLIST_FILE = "Surfingkeys App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
